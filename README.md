@@ -67,14 +67,14 @@ import discord_commands as dc
 TOKEN = "BOT TOKEN"
 APPLICATION_ID = 1234 # .... Replace 1234 with your application ID
 
-user = dc.UserCommand(
+msg = dc.MessageCommand(
     name="Delete Message",
     description="Delete the message",
     guilds=[],
     dm=False
 )
 
-dc.register(user , APPLICATION_ID , TOKEN)
+dc.register(msg , APPLICATION_ID , TOKEN)
 ```
 
 ## Package
